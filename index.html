@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>my first html5 game</title>
+  </head>
+  <style>
+    body{
+      margin:0; padding: 0;
+    }
+    canvas{
+      display:block;
+      margin: 0 auto;
+    }
+    #player, #bg{
+      display: none;
+    }
+  </style>
+  <body>
+    <img id=bg src="pics/bg.png"/>
+    <img id="player" src="pics/squirtle-small.png">
+    <canvas id="canvas"></canvas> 
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
