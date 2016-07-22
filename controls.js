@@ -26,11 +26,11 @@ $(document).on("touchmove", function(){
   var touchY = e.touches[0].clientY;
   if (touchX < player.x){
     player.velX = -5;
-    player.dir = "right";
+    player.dir = "left";
   }
   if (touchX > player.x) {
     player.velX = 5;
-    player.dir = 
+    player.dir = "right"
   if (touchY < player.y) player.velY = -5;
   if (touchY > player.y) player.velY = 5;
 
