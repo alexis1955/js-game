@@ -30,11 +30,12 @@ $(document).on("touchmove", function(){
   }
   if (touchX > player.x) {
     player.velX = 5;
-    player.dir = "right"
+    player.dir = "right";
+  }
   if (touchY < player.y) player.velY = -5;
   if (touchY > player.y) player.velY = 5;
 });
-$(document).on("touchend", function(e))
+$(document).on("touchend", function(e){
   player.velX = 0;
   player.velY = 0;
 });
