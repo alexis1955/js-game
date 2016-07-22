@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewpoint" content="width=device-width, initial-scale=0.7, user-scalable=no"></meta>
+    
     <title>my first html5 game</title>
   </head>
   <style>
@@ -11,15 +13,23 @@
       display:block;
       margin: 0 auto;
     }
-    #player, #bg{
+    #player, #bg, #playerf1, #playerf2, #playerf3, #playerf4, #lucario{
       display: none;
     }
   </style>
   <body>
-    <img id=bg src="pics/bg.png"/>
+    <img id="bg" src="http://orig08.deviantart.net/629e/f/2015/025/4/1/pokemon_oras_battle_background_by_jenske05-d8fbmbq.png"/>
+    <img id="playerf1" src="pics/squirtle-wings.png">
+    <img id="playerf2" src="pics/squirtle-wings-2.png">
+    <img id="playerf3" src="pics/squirtle-wings-3.png">
+    <img id="playerf4" src="pics/squirtle-wings-4.png">
     <img id="player" src="pics/squirtle-small.png">
-    <canvas id="canvas"></canvas> 
+    <img id="lucario" src="pics/Brawl_Lucario_final.png">
+    <canvas id="canvas"></canvas>
     <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <script src="player.js"></script>
+    <script src="enemy.js"></script>
     <script src="main.js"></script>
+    <script src="controls.js"></script>
   </body>
 </html>
