@@ -18,7 +18,7 @@ $(document).keyup(function(e){
   if (e.keyCode == 40) player.velY = 0;
 });
 
-$(document).on("touchmove", function(){
+$(document).on("touchmove", function(e){
 
 
   e.preventDefault();
